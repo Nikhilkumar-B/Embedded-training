@@ -1,0 +1,27 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+    int n=6,i,arr[n],*ptr[n];
+
+    printf("enter the elements \n");
+
+
+    for(i=0; i<n; i++)
+    {
+        scanf("%d",&arr[i]);
+        ptr[i]=&arr[i];
+
+    }
+    for(i=0; i<n; i++)
+    {
+        printf("%d\n",*ptr[i]);
+    }
+
+
+
+
+
+return 0;
+}
